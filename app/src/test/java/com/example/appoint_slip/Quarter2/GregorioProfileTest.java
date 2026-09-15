@@ -4,7 +4,7 @@ import org.junit.Test;
 public class GregorioProfileTest {
     @Test
 
-    public void printMyprofile() {
+    public void printMyProfile() {
         String myName = "Gregorio";
         String petName = "Miya";
         String favFood = "adobo";

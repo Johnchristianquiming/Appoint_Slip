@@ -3,7 +3,7 @@ import org.junit.Test;
 public class GarciaProfileTest {
 
 @Test
-public void printMYprofile(){
+public void printMyProfile() {
     String myName = "Garcia";
     String petname1 = "bubu";
     String petname2 = "dudu";
