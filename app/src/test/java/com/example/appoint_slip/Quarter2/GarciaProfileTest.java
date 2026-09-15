@@ -1,4 +1,4 @@
-package Quarter2;
+package com.example.appoint_slip.Quarter2;
 import org.junit.Test;
 public class GarciaProfileTest {
 
@@ -12,7 +12,7 @@ public void printMYprofile(){
 
     System.out.println("--- MY DIGITAL PROFILE ---");
     System.out.println("Hello, my name is " + myName + "and I am " + myAge + " years old.");
-    System.out.println("I have two pets, " + petname1 + " and " + petname2 + ".");;;
+    System.out.println("I have two pets, " + petname1 + " and " + petname2 + ".");
     System.out.println("If I could eat " + favfood + " everyday!");
 
     }
