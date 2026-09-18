@@ -1,10 +1,10 @@
-package com.example.appoint_slip.Quarter2.PracticalExam; // TODO: Change this to your actual package name
+package com.example.appoint_slip.Quarter2.MiniPeta3; // TODO: Change this to your actual package name
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class MiniPeta2 {
+public class MenuTestingFile {
 
     @Test
     public void testCompleteSystemFlow() {
@@ -83,7 +83,7 @@ public class MiniPeta2 {
          * 4. RUNNING YOUR ACTUAL PROGRAM
          * TODO: Change "MainMenu" to the exact name of your main system class.
          */
-        MiniPeta2 mainSystem = new MiniPeta2();
+        MenuTestingFile mainSystem = new MenuTestingFile();
 
         // Start your system and pass our automated scanner into it.
         mainSystem.start(scanner);
