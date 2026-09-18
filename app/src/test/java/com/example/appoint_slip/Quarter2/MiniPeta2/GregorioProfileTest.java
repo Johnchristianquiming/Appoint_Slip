@@ -1,4 +1,4 @@
-package com.example.appoint_slip.Quarter2;
+package com.example.appoint_slip.Quarter2.MiniPeta2;
 
 import org.junit.Test;
 public class GregorioProfileTest {
