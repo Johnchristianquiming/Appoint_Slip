@@ -86,7 +86,36 @@ public class MenuTestingFile {
         MenuTestingFile mainSystem = new MenuTestingFile();
 
         // Start your system and pass our automated scanner into it.
-        mainSystem.start(scanner);
+        MenuTestingFile.start(scanner);
+        }
+        public static void start(Scanner scanner) {
+        boolean isRunning = true;
+
+        while (isRunning) {
+            System.out.println("\n --- MAIN MENU ---");
+            System.out.println("1. View assigned Schedules");
+            System.out.println("2. View available schedules");
+            System.out.println("3. View taken schedules");
+            System.out.println("4. EXIT MENU");
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("ERROR OUTPUT");
+                break;
+            }
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch(choice) {
+                case 1:
+                    System.out.println("VIEWING ASSIGNED SCHEDULES");
+                    break;
+                case 2:
+                    System.out.println("VIEW AVAILABLE SCHEDULES 10:30 AM - 12:30 PM/2:30 PM - 4:30 PM");
+                    System.out.println("PLEASE CHOOSE YOUR SCHEEDULE: ");
+                    if (scanner.hasNextLine());
+
+            }
+        }
     }
 }
 
