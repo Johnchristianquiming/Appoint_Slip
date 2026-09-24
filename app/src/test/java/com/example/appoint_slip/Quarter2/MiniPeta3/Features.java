@@ -33,7 +33,7 @@ public class Features {
                 isScheduling = false;
             }
         }
-    } public void subjectAssignation(Scanner subjectAssign) {
+    } public static void subjectAssignation(Scanner subjectAssign) {
         boolean isSubjectAssigning = true;
         List<String> allListedSubjects = Arrays.asList(
                 "CLED",
