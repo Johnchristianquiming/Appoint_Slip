@@ -87,6 +87,7 @@ public class MenuTestingFile {
 
         // Start your system and pass our automated scanner into it.
         Features.Scheduling(scanner);
+        Features.subjectAssignation(scanner);
         }
             }
 
