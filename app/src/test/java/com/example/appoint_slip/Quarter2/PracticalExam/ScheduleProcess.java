@@ -36,5 +36,5 @@ public class ScheduleProcess {
                 isScheduling = false;
             }
         }
-
-}}
+    }
+}

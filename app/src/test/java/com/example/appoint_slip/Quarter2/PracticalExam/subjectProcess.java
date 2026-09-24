@@ -19,9 +19,9 @@ public class subjectProcess {
         );
 
         while (isSubjectAssigning) {
-            System.out.println("Subjects for stay slip" + String.join(", ", allListedSubjects));
+            System.out.println("Subjects for stay slip " + String.join(", ", allListedSubjects));
 
-            System.out.println("Please select subject:");
+            System.out.println("Please select subject: ");
             String subjectInput = subjectAssign.nextLine().trim();
 
             boolean subjectIsTaken = false;
@@ -30,7 +30,6 @@ public class subjectProcess {
                     subjectIsTaken = true;
                     break;
                 }
-
             }
             if (subjectIsTaken) {
                 System.out.println("Please enter the listed subject.\n");
@@ -38,7 +37,6 @@ public class subjectProcess {
                 System.out.println("Subject successfully listed" + subjectInput);
                 isSubjectAssigning = false;
             }
-
         }
     }
 }
