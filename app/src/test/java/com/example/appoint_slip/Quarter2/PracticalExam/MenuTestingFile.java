@@ -1,4 +1,4 @@
-package com.example.appoint_slip.Quarter2.MiniPeta3; // TODO: Change this to your actual package name
+package com.example.appoint_slip.Quarter2.PracticalExam; // TODO: Change this to your actual package name
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
@@ -86,8 +86,8 @@ public class MenuTestingFile {
         MenuTestingFile Scheduling = new MenuTestingFile();
 
         // Start your system and pass our automated scanner into it.
-        Features.Scheduling(scanner);
-        Features.subjectAssignation(scanner);
+        subjectProcess.subjectAssignation(scanner);
+        ScheduleProcess.Scheduling(scanner);
         }
             }
 
