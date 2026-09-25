@@ -28,30 +28,27 @@ public class MenuMain {
             System.out.println(choice);
 
             // Menu selection
-            if (choice == 1) {
 
-                subjectProcess.subjectAssignation(scanner);
-
-            } else if (choice == 2) {
-
-
-
-            } else if (choice == 3) {
-
-
-
-            } else if (choice == 4) {
-
-
-
-            } else if (choice == 5) {
-
-                System.out.println("Exiting Stay Slip Request System...");
-                isRunning = false;
-
-            } else {
-
-                System.out.println("Invalid choice. Please try again.");
+            switch (choice) {
+                case 1:
+                    subjectProcess.subjectAssignation(scanner);
+                    break;
+                case 2:
+                    // TODO: Add code for choice 2
+                    break;
+                case 3:
+                    // TODO: Add code for choice 3
+                    break;
+                case 4:
+                    // TODO: Add code for choice 4
+                    break;
+                case 5:
+                    System.out.println("Exiting Stay Slip Request System...");
+                    isRunning = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
             }
         }
 
