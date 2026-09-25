@@ -54,7 +54,7 @@ public class MenuMain {
                 System.out.println("Invalid choice. Please try again.");
             }
         }
-        isRunning = false;
+
         System.out.println("System closed.");
 
     }

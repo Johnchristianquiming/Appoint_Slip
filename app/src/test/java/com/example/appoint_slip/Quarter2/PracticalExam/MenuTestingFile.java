@@ -84,7 +84,7 @@ public class MenuTestingFile {
          * TODO: Change "MainMenu" to the exact name of your main system class.
          */
         MenuMain mainSystem = new MenuMain();
-        mainSystem.start(scanner);
+        MenuMain.start(scanner);
 
         // Start your system and pass our automated scanner into it.
         subjectProcess.subjectAssignation(scanner);
