@@ -32,17 +32,17 @@ public class MenuMain {
 
                 subjectProcess.subjectAssignation(scanner);
 
-            /*} else if (choice == 2) {
+            } else if (choice == 2) {
 
-                reasonForStayingFeature.runFeature(scanner);
+
 
             } else if (choice == 3) {
 
-                sbmoApprovalFeature.runFeature(scanner);
+
 
             } else if (choice == 4) {
 
-                teacherApprovalFeature.runFeature(scanner);*/
+
 
             } else if (choice == 5) {
 

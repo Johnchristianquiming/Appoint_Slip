@@ -31,14 +31,14 @@ public class MenuTestingFile {
                 // Simulating the user typing '1' and pressing ENTER.
                 // IMPORTANT: The "\n" represents pressing the Enter key!
                 simulatedUserInput.append("1\n");
-            } else if (interactionCount == 2) {
+            /*} else if (interactionCount == 2) {
                 // Simulating the user choosing option '2', then typing '300'
                 simulatedUserInput.append("2\n");
                 simulatedUserInput.append("300\n");
             } else {
                 // Simulating the user choosing option '2', then typing '5000'
                 simulatedUserInput.append("2\n");
-                simulatedUserInput.append("5000\n");
+                simulatedUserInput.append("5000\n");*/
             }
             interactionCount++;
         }
@@ -49,10 +49,10 @@ public class MenuTestingFile {
          * a specific path the user takes through your menus.
          */
         System.out.println("Generating inputs for specific features...");
-        simulatedUserInput.append("3\n");    // E.g., Enter a specific sub-menu (like Settings or Combo Meals)
-        simulatedUserInput.append("1\n");    // E.g., Choose an option inside that sub-menu
-        simulatedUserInput.append("9999\n"); // E.g., Type a specific value (like a PIN or a quantity)
-        simulatedUserInput.append("3\n");    // E.g., Go back to the Main Menu
+        simulatedUserInput.append("1\n");    // E.g., Enter a specific sub-menu (like Settings or Combo Meals)
+        simulatedUserInput.append("CLED\n");    // E.g., Choose an option inside that sub-menu
+        /*simulatedUserInput.append("9999\n"); // E.g., Type a specific value (like a PIN or a quantity)
+        simulatedUserInput.append("3\n");*/    // E.g., Go back to the Main Menu
 
         /*
          * PART 3: Simulating the Exit Command
@@ -61,7 +61,7 @@ public class MenuTestingFile {
          * is empty, causing the test to crash!
          */
         System.out.println("Generating input to Exit the system...");
-        simulatedUserInput.append("4\n"); // Change '4' to whatever your Exit option is!
+        simulatedUserInput.append("5\n"); // Change '4' to whatever your Exit option is!
 
         System.out.println("--- INPUT GENERATION COMPLETE ---\n");
 
@@ -83,7 +83,8 @@ public class MenuTestingFile {
          * 4. RUNNING YOUR ACTUAL PROGRAM
          * TODO: Change "MainMenu" to the exact name of your main system class.
          */
-        MenuTestingFile Scheduling = new MenuTestingFile();
+        MenuMain mainSystem = new MenuMain();
+        mainSystem.start(scanner);
 
         // Start your system and pass our automated scanner into it.
         subjectProcess.subjectAssignation(scanner);
