@@ -31,10 +31,10 @@ public class subjectProcess {
                     break;
                 }
             }
-            if (subjectIsTaken) {
-                System.out.println("Please enter the listed subject.\n");
+            if (!subjectIsTaken) {
+                System.out.println("Invalid selection. Please enter a listed subject.\n");
             } else {
-                System.out.println("Subject successfully listed" + subjectInput);
+                System.out.println("Subject successfully listed: " + subjectInput);
                 isSubjectAssigning = false;
             }
         }

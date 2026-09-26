@@ -6,8 +6,6 @@ import java.util.List;
 public class ScheduleProcess {
     public static void Scheduling(Scanner scheduling) {
         boolean isScheduling = true;
-        Scanner scanner = new Scanner(System.in);
-        ScheduleProcess.Scheduling(scanner);
 
         List<String> takenSchedules = Arrays.asList(
                 "10:45 AM - 2:30 PM",
