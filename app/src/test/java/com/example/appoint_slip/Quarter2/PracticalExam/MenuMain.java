@@ -18,7 +18,7 @@ public class MenuMain {
             System.out.println("4. Teacher Approval");
             System.out.println("5. Exit");
             System.out.println("========================================");
-            System.out.print("Enter your choice: ");
+            System.out.println("Enter your choice: ");
 
             String choice = scanner.nextLine();
             if (choice.equals("1")) {
@@ -35,7 +35,7 @@ public class MenuMain {
                 teacherApproval teacherFeature = new teacherApproval();
                 teacherApproval.teacherFeature(scanner);
             } else if (choice.equals("5")) {
-                System.out.println("Exiitng, GOODBYE!");
+                System.out.println("Exiting, GOODBYE!");
                 break;
             }
             else{

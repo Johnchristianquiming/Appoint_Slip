@@ -16,7 +16,7 @@ public class ScheduleProcess {
         while (isScheduling) {
             System.out.println("Taken time slots are: " + String.join(", ", takenSchedules));
 
-            System.out.print("Avail a Schedule: ");
+            System.out.println("Avail a Schedule: ");
             String scheduleInput = scheduling.nextLine().trim();
 
             boolean isScheduleTaken = false;
