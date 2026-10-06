@@ -4,12 +4,14 @@ import java.util.Scanner;
 
 import java.util.Scanner;
 
+// sbmo feature, approves or rejects the stay slip
 public class SbmoApproval {
     public static void sbmoFeature(Scanner scanner) {
         boolean validDecision = true;
 
         System.out.println("--- SBMO APPROVAL ---");
 
+        // keeps asking until a valid decision is entered
         while (validDecision) {
             System.out.println("Enter your ID: ");
             String yourID = scanner.nextLine().trim();
@@ -29,6 +31,7 @@ public class SbmoApproval {
                 System.out.println("Stay slip rejected by SBMO");
                 validDecision = false;
             } else {
+                // wrong input, type it again
                 System.out.println("INVALID! Enter 'Approve' or 'Reject'.");
                 System.out.println("Try again.");
             }

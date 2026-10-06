@@ -2,12 +2,14 @@ package com.example.appoint_slip.Quarter2.PracticalExam;
 
 import java.util.Scanner;
 
+// teacher feature, approves or rejects the stay slip
 public class teacherApproval {
     public static void teacherFeature(Scanner scanner) {
         boolean validTeacherDecision = true;
 
         System.out.println("--- TEACHER APPROVAL ---");
 
+        // keeps asking until a valid decision is entered
         while (validTeacherDecision) {
             System.out.println("Enter your ID: ");
             String yourID = scanner.nextLine().trim();
@@ -27,6 +29,7 @@ public class teacherApproval {
                 System.out.println("Stay slip rejected by TEACHER");
                 validTeacherDecision = false;
             } else {
+                // wrong input, type it again
                 System.out.println("INVALID! Enter 'Approve' or 'Reject'.");
                 System.out.println("Try again.");
             }

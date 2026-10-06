@@ -4,6 +4,7 @@ import android.util.Log;
 
 import java.util.Scanner;
 
+// main menu, picks which feature to run
 public class MenuMain {
     public void start(Scanner scanner) {
         boolean picking = true;
@@ -24,6 +25,7 @@ public class MenuMain {
 
             String choice = scanner.nextLine();
 
+            // go to the feature that matches the choice
             if (choice.equals("1")) {
                 LoginPage.LoggingIn(scanner);
             } else if (choice.equals("2")) {
