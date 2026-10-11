@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".login">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,5 +15,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="312dp"
+        android:layout_height="495dp"
+        android:src="@drawable/or_log_in__presentation_"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="367dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
