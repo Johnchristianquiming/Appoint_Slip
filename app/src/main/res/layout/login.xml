@@ -5,31 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".login"
+    android:background="@drawable/loginbackground">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="312dp"
-        android:layout_height="495dp"
-        android:src="@drawable/or_log_in__presentation_"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="367dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="433dp"
-        android:layout_height="737dp"
-        app:srcCompat="@drawable/loginbackground"
-        tools:layout_editor_absoluteX="-217dp"
-        tools:layout_editor_absoluteY="-148dp" />
-
+        android:layout_width="378dp"
+        android:layout_height="459dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mcslogotransparent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
