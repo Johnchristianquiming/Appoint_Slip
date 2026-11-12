@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/loginbg">
@@ -232,4 +232,25 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/returntoWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="667dp"
+        android:background="@drawable/rectangle_lightblue_button"
+        android:fontFamily="@font/abril_fatface"
+        android:outlineAmbientShadowColor="#03A9F4"
+        android:outlineSpotShadowColor="#03A9F4"
+        android:shadowColor="#03A9F4"
+        android:text="Return to Previous page"
+        android:textColorHighlight="#03A9F4"
+        android:textColorHint="#03A9F4"
+        android:textColorLink="#03A9F4"
+        app:backgroundTint="#00A8FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#03A9F4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
