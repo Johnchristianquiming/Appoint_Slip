@@ -18,17 +18,18 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.welcome_screen);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.welcomescreen), (v, insets) -> {
                     Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
                     v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
                     return insets;
-                });
+        });
             Button welcomeButton = findViewById(R.id.returntologinButton);
 
             welcomeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(WelcomeScreen.this, login.class);
+                    Intent intent = new Intent(WelcomeScreen.this, Login.class);
+                    startActivity(intent);
                 }
         });
     }

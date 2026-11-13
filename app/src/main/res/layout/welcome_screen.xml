@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/welcomescreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/loginbg">
@@ -11,18 +11,18 @@
         android:id="@+id/imageView"
         android:layout_width="214dp"
         android:layout_height="226dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mcslogotransparent" />
+        app:layout_constraintVertical_bias="0.134"
+        app:srcCompat="@drawable/mcslogo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="146dp"
         android:layout_height="39dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="297dp"
         android:fontFamily="@font/abril_fatface"
         android:outlineAmbientShadowColor="#03A9F4"
         android:outlineSpotShadowColor="#03A9F4"
@@ -33,16 +33,41 @@
         android:textColorHint="#03A9F4"
         android:textColorLink="#03A9F4"
         android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="236dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/abril_fatface"
+        android:outlineAmbientShadowColor="#03A9F4"
+        android:outlineSpotShadowColor="#03A9F4"
+        android:shadowColor="#03A9F4"
+        android:text="Appoint Slip"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#03A9F4"
+        android:textColorHighlight="#03A9F4"
+        android:textColorHint="#03A9F4"
+        android:textColorLink="#03A9F4"
+        android:textSize="39sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
 
     <Button
         android:id="@+id/returntologinButton"
         android:layout_width="123dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="364dp"
-        android:layout_marginBottom="297dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_lightblue_button"
         android:fontFamily="@font/abril_fatface"
         android:outlineAmbientShadowColor="#03A9F4"
         android:outlineSpotShadowColor="#03A9F4"
@@ -51,11 +76,12 @@
         android:textColorHighlight="#03A9F4"
         android:textColorHint="#03A9F4"
         android:textColorLink="#03A9F4"
-        android:background="@drawable/rectangle_lightblue_button"
+        app:backgroundTint="#00A8FF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825"
         app:rippleColor="#03A9F4"
-        app:strokeColor="#03A9F4"
-        app:backgroundTint="#00A8FF"/>
+        app:strokeColor="#03A9F4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
